@@ -43,6 +43,7 @@ function attachEventListeners() {
  * then sets that value as the current value of the task textarea
  */
 function loadSavedData() {
+    var taskVal = $('#task-' + i).val();
     for (var i = 8; i <= 17; i++) {
         // grab the value from localStorage ( or null if it doesn't exist)
         var value = localStorage.getItem(i);
